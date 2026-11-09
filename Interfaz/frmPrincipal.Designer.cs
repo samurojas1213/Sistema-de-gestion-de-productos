@@ -28,85 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnAdministraciondeCategorias = new Button();
-            btnAdministraciondeProductos = new Button();
-            btnAsignaciondeCategorias = new Button();
-            button2 = new Button();
             label1 = new Label();
+            btnCategorias = new Button();
+            btnProductos = new Button();
             SuspendLayout();
-            // 
-            // btnAdministraciondeCategorias
-            // 
-            btnAdministraciondeCategorias.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAdministraciondeCategorias.Location = new Point(181, 134);
-            btnAdministraciondeCategorias.Name = "btnAdministraciondeCategorias";
-            btnAdministraciondeCategorias.Size = new Size(423, 67);
-            btnAdministraciondeCategorias.TabIndex = 3;
-            btnAdministraciondeCategorias.Text = "Administracion de categorias";
-            btnAdministraciondeCategorias.UseVisualStyleBackColor = true;
-            // 
-            // btnAdministraciondeProductos
-            // 
-            btnAdministraciondeProductos.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAdministraciondeProductos.Location = new Point(1076, 134);
-            btnAdministraciondeProductos.Name = "btnAdministraciondeProductos";
-            btnAdministraciondeProductos.Size = new Size(423, 67);
-            btnAdministraciondeProductos.TabIndex = 4;
-            btnAdministraciondeProductos.Text = "Administracion de productos";
-            btnAdministraciondeProductos.UseVisualStyleBackColor = true;
-            // 
-            // btnAsignaciondeCategorias
-            // 
-            btnAsignaciondeCategorias.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAsignaciondeCategorias.Location = new Point(181, 385);
-            btnAsignaciondeCategorias.Name = "btnAsignaciondeCategorias";
-            btnAsignaciondeCategorias.Size = new Size(423, 67);
-            btnAsignaciondeCategorias.TabIndex = 5;
-            btnAsignaciondeCategorias.Text = "Asignacion de categorias";
-            btnAsignaciondeCategorias.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1076, 385);
-            button2.Name = "button2";
-            button2.Size = new Size(423, 67);
-            button2.TabIndex = 6;
-            button2.Text = "Administracion de categorias";
-            button2.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(590, 29);
+            label1.Location = new Point(125, 26);
             label1.Name = "label1";
             label1.Size = new Size(497, 34);
             label1.TabIndex = 7;
             label1.Text = "Sistema de gestion de productos";
+            // 
+            // btnCategorias
+            // 
+            btnCategorias.BackColor = SystemColors.ScrollBar;
+            btnCategorias.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCategorias.Location = new Point(125, 103);
+            btnCategorias.Name = "btnCategorias";
+            btnCategorias.Size = new Size(497, 82);
+            btnCategorias.TabIndex = 8;
+            btnCategorias.Text = "Administrar categorías";
+            btnCategorias.UseVisualStyleBackColor = false;
+            btnCategorias.Click += this.btnCategorias_Click_1;
+            // 
+            // btnProductos
+            // 
+            btnProductos.BackColor = SystemColors.ScrollBar;
+            btnProductos.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnProductos.Location = new Point(125, 209);
+            btnProductos.Name = "btnProductos";
+            btnProductos.Size = new Size(497, 82);
+            btnProductos.TabIndex = 9;
+            btnProductos.Text = "Administrar productos";
+            btnProductos.UseVisualStyleBackColor = false;
+            btnProductos.Click += this.btnProductos_Click_1;
             // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(1820, 910);
+            ClientSize = new Size(767, 403);
+            Controls.Add(btnProductos);
+            Controls.Add(btnCategorias);
             Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(btnAsignaciondeCategorias);
-            Controls.Add(btnAdministraciondeProductos);
-            Controls.Add(btnAdministraciondeCategorias);
             Name = "frmPrincipal";
             Text = "Form1";
+            Load += this.frmPrincipal_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Button btnAdministraciondeCategorias;
-        private Button btnAdministraciondeProductos;
-        private Button btnAsignaciondeCategorias;
-        private Button button2;
         private Label label1;
+        private Button btnCategorias;
+        private Button btnProductos;
     }
 }
