@@ -1,6 +1,6 @@
 ﻿namespace Sistema_de_gestion_de_productos
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,22 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtSistemadegestiondeproductos = new TextBox();
             btnAdministraciondeCategorias = new Button();
             btnAdministraciondeProductos = new Button();
             btnAsignaciondeCategorias = new Button();
             button2 = new Button();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // txtSistemadegestiondeproductos
-            // 
-            txtSistemadegestiondeproductos.Font = new Font("Arial", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            txtSistemadegestiondeproductos.Location = new Point(608, 21);
-            txtSistemadegestiondeproductos.Name = "txtSistemadegestiondeproductos";
-            txtSistemadegestiondeproductos.Size = new Size(440, 39);
-            txtSistemadegestiondeproductos.TabIndex = 1;
-            txtSistemadegestiondeproductos.Text = "Sistema de gestion de productos";
-            txtSistemadegestiondeproductos.TextChanged += txtSistemadegestiondeproductos_TextChanged;
             // 
             // btnAdministraciondeCategorias
             // 
@@ -85,28 +75,38 @@
             button2.Text = "Administracion de categorias";
             button2.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(590, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(497, 34);
+            label1.TabIndex = 7;
+            label1.Text = "Sistema de gestion de productos";
+            // 
+            // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1820, 910);
+            Controls.Add(label1);
             Controls.Add(button2);
             Controls.Add(btnAsignaciondeCategorias);
             Controls.Add(btnAdministraciondeProductos);
             Controls.Add(btnAdministraciondeCategorias);
-            Controls.Add(txtSistemadegestiondeproductos);
-            Name = "Form1";
+            Name = "frmPrincipal";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private TextBox txtSistemadegestiondeproductos;
         private Button btnAdministraciondeCategorias;
         private Button btnAdministraciondeProductos;
         private Button btnAsignaciondeCategorias;
         private Button button2;
+        private Label label1;
     }
 }
