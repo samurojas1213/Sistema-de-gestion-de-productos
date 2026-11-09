@@ -53,7 +53,7 @@
             btnCategorias.TabIndex = 8;
             btnCategorias.Text = "Administrar categorías";
             btnCategorias.UseVisualStyleBackColor = false;
-            btnCategorias.Click += this.btnCategorias_Click_1;
+            btnCategorias.Click += btnCategorias_Click_1;
             // 
             // btnProductos
             // 
@@ -65,7 +65,7 @@
             btnProductos.TabIndex = 9;
             btnProductos.Text = "Administrar productos";
             btnProductos.UseVisualStyleBackColor = false;
-            btnProductos.Click += this.btnProductos_Click_1;
+            btnProductos.Click += btnProductos_Click_1;
             // 
             // frmPrincipal
             // 
@@ -77,8 +77,9 @@
             Controls.Add(btnCategorias);
             Controls.Add(label1);
             Name = "frmPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Load += this.frmPrincipal_Load;
+            Load += frmPrincipal_Load;
             ResumeLayout(false);
             PerformLayout();
         }
