@@ -10,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Modelos\" />
     <Folder Include="Datos\" />
     <Folder Include="Logica\" />
   </ItemGroup>
