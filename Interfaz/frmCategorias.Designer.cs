@@ -138,7 +138,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(982, 1254);
+            ClientSize = new Size(982, 692);
             Controls.Add(dgvCategorias);
             Controls.Add(txtDescripcion);
             Controls.Add(txtNombre);
