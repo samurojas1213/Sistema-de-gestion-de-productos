@@ -30,13 +30,13 @@ Aplicación de escritorio para administrar los productos de una pequeña tienda.
 4. Ejecutarlo una sola vez (F5). El script crea la base `GestionProductosDB`, las tablas `Categorias` y `Productos`, la llave foránea y datos de prueba.
 
 ## Información para la conexión a SQL Server
-La cadena de conexión está en `Datos/Conexion.cs`:
+El sistema usa una instancia local de SQL Server Express con autenticación de Windows. La cadena de conexión está en `Datos/Conexion.cs`:
 
 ```
-Server=localhost;Database=GestionProductosDB;Trusted_Connection=True;TrustServerCertificate=True;
+Server=.\SQLEXPRESS;Database=GestionProductosDB;Trusted_Connection=True;TrustServerCertificate=True;
 ```
 
-Si el nombre del servidor es distinto (por ejemplo `.\SQLEXPRESS`), se debe modificar el valor de `Server` en ese archivo.
+Si en otra computadora el servidor tiene un nombre distinto (por ejemplo `localhost`), se debe modificar el valor de `Server` en ese archivo. El nombre del servidor es el mismo que se escribe al conectarse en SQL Server Management Studio.
 
 ## Instrucciones para ejecutar el sistema
 1. Clonar o descargar el repositorio.
